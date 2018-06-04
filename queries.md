@@ -1,24 +1,5 @@
 ![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
 
-<!-- example query -->
-  - **`query`**: { founded_day: 1 }
-  - **`projection`**: { name: 1, _id: 0 }
-  - **`sort`**: { name: 1 }
-  - **`skip`**: 50
-  - **`limit`**: 20
-
-
- { $and: [ {  }, {  } ] }
-
- { field_name: { $lte: 2005 } }
-
-
-
-
-{ field: { $ne: null } }
-
-
-
 
 # Answers
 
@@ -87,6 +68,9 @@
 
 
 ### 12. All the companies that have been 'deadpooled' after the third year.
+
+  - **`query`**: { deadpooled_year: { $gt: "founded_year", 3  }
+
 
 
 
